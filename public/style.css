@@ -1,0 +1,109 @@
+body {
+font-family: Arial, sans-serif;
+background: #f4f6f8;
+margin: 0;
+}
+
+
+header {
+background: #222;
+color: white;
+padding: 1rem;
+}
+
+
+nav a {
+color: white;
+margin-right: 15px;
+text-decoration: none;
+}
+
+
+main {
+padding: 1rem;
+max-width: 800px;
+margin: auto;
+}
+
+
+.post {
+background: white;
+padding: 1rem;
+margin-bottom: 1rem;
+border-radius: 8px;
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+
+input, textarea, button {
+padding: 10px;
+font-size: 1rem;
+}
+
+
+button {
+background: #007bff;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+
+button:hover {
+background: #0056b3;
+}
+
+
+.actions {
+display: flex;
+gap: 10px;
+}
+
+
+@media (max-width: 600px) {
+body {
+font-size: 14px;
+}
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Edit button */
+.btn.edit {
+  background: #6c757d;
+  color: white;
+}
+
+.btn.edit:hover {
+  background: #5a6268;
+}
+
+/* Delete button */
+.btn.delete {
+  background: #dc3545;
+  color: white;
+}
+
+.btn.delete:hover {
+  background: #c82333;
+}

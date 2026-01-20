@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<h2>All Posts</h2>
+
+<% if (posts.length === 0) { %>
+  <p>No posts yet.</p>
+<% } %>
+
+<% posts.forEach(post => { %>
+  <div class="post">
+    <h3><%= post.title %></h3>
+    <p><%= post.content %></p>
+
+<div class="actions">
+  <a href="/edit/<%= post.id %>" class="btn edit">Edit</a>
+
+  <form action="/delete/<%= post.id %>" method="POST">
+    <button class="btn delete">Delete</button>
+  </form>
+</div>
+
+    </div>
+  </div>
+<% }) %>
+
+<%- include('partials/footer') %>
